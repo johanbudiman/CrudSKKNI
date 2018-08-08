@@ -10,7 +10,7 @@ class DataSertifikasiModel extends CI_Model {
 	public function getDataSertifikasi()
 	{
 		$this->db->select('nik, nama, nohp, tmptlahir, tgllahir, email, tru_skema.skema, tru_tmptujikom.tmptujikom, rekomendasi, ttsertifikasi, organisasi');
-		$this->db->order_by('nama', 'asc');
+		$this->db->order_by('tgllahir', 'desc');
 		$this->db->where('t_data_pribadi.id = t_sertifikasi.id');
 		$this->db->where('tru_skema.kd = t_sertifikasi.skema');
 		$this->db->where('tru_tmptujikom.kd = t_sertifikasi.tmptujikom');
