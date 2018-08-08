@@ -42,4 +42,4 @@ databases:
 
 username dan password default :
 -username : admin
--username : admin
+-password : admin
