@@ -21,7 +21,7 @@
 		                <div class="d-flex w-100 justify-content-start align-items-center">
 		                    <span class="fa fa-calendar fa-fw mr-3"></span>
 		                    <span>
-		                    	Input Data Peserta Sertifikasi
+		                    	Data Peserta Sertifikasi
 		                    </span>
 		                </div>
 		            </a>

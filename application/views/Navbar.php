@@ -12,7 +12,7 @@
             <li class="nav-item d-sm-block d-md-none">
                 <!-- <a class="nav-link" href="#"> -->
                 <a href="<?php echo site_url('Homepage/TampilDataPeserta') ?>" class="nav-link bg-info" id="pills-1-tab" data-toggle="pill" role="tab" aria-controls="pills-1">
-                	Input Data Peserta Sertifikasi
+                	Data Peserta Sertifikasi
                 </a>
             </li>
             <!-- <li class="nav-item d-sm-block d-md-none">

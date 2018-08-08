@@ -14,5 +14,10 @@
 	<script src="<?php echo base_url('assets/js/jquery.validate.js');?>"></script>
     <script src="<?php echo base_url('assets/css/bootstrap/js/bootstrap.min.js');?>"></script>
 	<title>Admin Panel</title>
+
+
+	<?php 
+		error_reporting(0);
+	 ?>
 </head>
 <body>
