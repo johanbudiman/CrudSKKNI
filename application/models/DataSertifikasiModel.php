@@ -34,6 +34,69 @@ class DataSertifikasiModel extends CI_Model {
 		return $result;
 	}
 
+	public function getLaporanSertifikasiBerdasarkanSkema()
+	{
+		$this->db->select('tru_skema.skema, count(t_sertifikasi.skema) as jumlah');
+		$this->db->where('tru_skema.kd = t_sertifikasi.skema');
+		$this->db->group_by('tru_skema.skema');
+		$temp = $this->db->get('tru_skema, t_sertifikasi')->result();
+
+		$result = [];
+		foreach ($temp as $key => $value) {
+			$result['cskema_sertifikasi'][$key] = $value->skema;
+			$result['j_cskema_sertifikasi'][$key] = $value->jumlah;
+		}
+
+		return $result;
+	}
+
+	public function getLaporanSertifikasiBerdasarkanTempat()
+	{
+		$this->db->select('tru_tmptujikom.tmptujikom, count(t_sertifikasi.tmptujikom) as jumlah');
+		$this->db->where('tru_tmptujikom.kd = t_sertifikasi.tmptujikom');
+		$this->db->group_by('tru_tmptujikom.tmptujikom');
+		$temp = $this->db->get('tru_tmptujikom, t_sertifikasi')->result();
+
+		$result = [];
+		foreach ($temp as $key => $value) {
+			$result['ctmptujikom_sertifikasi'][$key] = $value->tmptujikom;
+			$result['j_ctmptujikom_sertifikasi'][$key] = $value->jumlah;
+		}
+
+		return $result;
+	}
+
+
+	public function getLaporanSertifikasiBerdasarkanOrganisasi()
+	{
+		$this->db->select('organisasi, count(organisasi) as jumlah');
+		$this->db->group_by('organisasi');
+		$temp = $this->db->get('t_sertifikasi')->result();
+
+		$result = [];
+		foreach ($temp as $key => $value) {
+			$result['corganisasi_sertifikasi'][$key] = $value->organisasi;
+			$result['j_corganisasi_sertifikasi'][$key] = $value->jumlah;
+		}
+
+		return $result;
+	}
+
+	public function getLaporanSertifikasiBerdasarkanTanggalSertifikasi()
+	{
+		$this->db->select('ttsertifikasi, count(ttsertifikasi) as jumlah');
+		$this->db->group_by('ttsertifikasi');
+		$temp = $this->db->get('t_sertifikasi')->result();
+
+		$result = [];
+		foreach ($temp as $key => $value) {
+			$result['cttsertifikasi_sertifikasi'][$key] = $value->ttsertifikasi;
+			$result['j_cttsertifikasi_sertifikasi'][$key] = $value->jumlah;
+		}
+
+		return $result;
+	}
+
 }
 
 /* End of file DataSertifikasiModel.php */

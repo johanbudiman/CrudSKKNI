@@ -55,6 +55,10 @@ class Homepage extends CI_Controller {
 	{
 		$data = array_merge(
 			$this->DataSertifikasiModel->getDataSertifikasi(),
+			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanSkema(),
+			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanTempat(),
+			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanOrganisasi(),
+			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanTanggalSertifikasi(),
 			array('nama_admin' => $this->session->userdata('nama_admin'))
 		);
 		$this->load->view('Header', $data);

@@ -3,8 +3,93 @@
 	
 	<div class="container-fluid">
 		
-		<h4 class="text-center font-weight-bold text-uppercase">Laporan Sertifikasi SKKNI</h4>
+		<h2 class="text-center font-weight-bold text-uppercase">Laporan Sertifikasi SKKNI</h2>
 
+		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Skema</h4>
+
+		<table class="table table-sm table-striped table-hover table-bordered">
+			<thead>
+				<tr class="thead-default table-success">
+					<?php foreach ($cskema_sertifikasi as $key => $value): ?>
+						<th class="text-center" scope="col"><?php echo $cskema_sertifikasi[$key] ?></th>
+					<?php endforeach ?>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<?php foreach ($j_cskema_sertifikasi as $key => $value): ?>
+						<td class="text-center" scope="col"><?php echo $j_cskema_sertifikasi[$key] ?></td>
+					<?php endforeach ?>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Tempat Ujian</h4>
+
+		<table class="table table-sm table-striped table-hover table-bordered">
+			<thead>
+				<tr class="thead-default table-success">
+					<?php foreach ($ctmptujikom_sertifikasi as $key => $value): ?>
+						<th class="text-center" scope="col"><?php echo $ctmptujikom_sertifikasi[$key] ?></th>
+					<?php endforeach ?>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<?php foreach ($j_ctmptujikom_sertifikasi as $key => $value): ?>
+						<td class="text-center" scope="col"><?php echo $j_ctmptujikom_sertifikasi[$key] ?></td>
+					<?php endforeach ?>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Organisasi</h4>
+
+		<table class="table table-sm table-striped table-hover table-bordered">
+			<thead>
+				<tr class="thead-default table-success">
+					<?php foreach ($corganisasi_sertifikasi as $key => $value): ?>
+						<th class="text-center" scope="col"><?php echo $corganisasi_sertifikasi[$key] ?></th>
+					<?php endforeach ?>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<?php foreach ($j_corganisasi_sertifikasi as $key => $value): ?>
+						<td class="text-center" scope="col"><?php echo $j_corganisasi_sertifikasi[$key] ?></td>
+					<?php endforeach ?>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Tanggal Sertifikasi</h4>
+
+		<table class="table table-sm table-striped table-hover table-bordered">
+			<thead>
+				<tr class="thead-default table-success">
+					<?php foreach ($cttsertifikasi_sertifikasi as $key => $value): ?>
+						<th class="text-center" scope="col"><?php echo $cttsertifikasi_sertifikasi[$key] ?></th>
+					<?php endforeach ?>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<?php foreach ($j_cttsertifikasi_sertifikasi as $key => $value): ?>
+						<td class="text-center" scope="col"><?php echo $j_cttsertifikasi_sertifikasi[$key] ?></td>
+					<?php endforeach ?>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+
+		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Data Keseluruhan</h4>
 		<table class="table table-sm table-striped table-hover table-bordered table-responsive">
 			<thead>
 				<tr class="thead-default table-success">
