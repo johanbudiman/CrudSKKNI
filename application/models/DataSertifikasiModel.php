@@ -97,6 +97,22 @@ class DataSertifikasiModel extends CI_Model {
 		return $result;
 	}
 
+	public function getLaporanSertifikasiBerdasarkanTanggalLahir()
+	{
+		$this->db->select('tgllahir, count(tgllahir) as jumlah');
+		$this->db->where('t_data_pribadi.id = t_sertifikasi.id_data_pribadi');
+		$this->db->group_by('tgllahir');
+		$temp = $this->db->get('t_sertifikasi, t_data_pribadi')->result();
+
+		$result = [];
+		foreach ($temp as $key => $value) {
+			$result['ctgllahir_sertifikasi'][$key] = $value->tgllahir;
+			$result['j_ctgllahir_sertifikasi'][$key] = $value->jumlah;
+		}
+
+		return $result;
+	}
+
 }
 
 /* End of file DataSertifikasiModel.php */

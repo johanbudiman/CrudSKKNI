@@ -59,6 +59,7 @@ class Homepage extends CI_Controller {
 			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanTempat(),
 			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanOrganisasi(),
 			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanTanggalSertifikasi(),
+			$this->DataSertifikasiModel->getLaporanSertifikasiBerdasarkanTanggalLahir(),
 			array('nama_admin' => $this->session->userdata('nama_admin'))
 		);
 		$this->load->view('Header', $data);

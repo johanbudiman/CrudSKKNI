@@ -87,6 +87,26 @@
 		</table>
 
 
+		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Tanggal Lahir</h4>
+
+		<table class="table table-sm table-striped table-hover table-bordered">
+			<thead>
+				<tr class="thead-default table-success">
+					<?php foreach ($ctgllahir_sertifikasi as $key => $value): ?>
+						<th class="text-center" scope="col"><?php echo $ctgllahir_sertifikasi[$key] ?></th>
+					<?php endforeach ?>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<?php foreach ($j_ctgllahir_sertifikasi as $key => $value): ?>
+						<td class="text-center" scope="col"><?php echo $j_ctgllahir_sertifikasi[$key] ?></td>
+					<?php endforeach ?>
+				</tr>
+			</tbody>
+		</table>
+
+
 
 
 		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Data Keseluruhan</h4>
