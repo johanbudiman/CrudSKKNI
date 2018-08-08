@@ -25,11 +25,11 @@
                 	Laporan Sertifikasi
                 </a>
             </li>
-            <li class="nav-item d-sm-block d-md-none">
+            <!-- <li class="nav-item d-sm-block d-md-none">
                 <a href="<?php echo site_url('Homepage/BackupData') ?>" class="nav-link bg-info" id="pills-3-tab" data-toggle="pill" role="tab" aria-controls="pills-3">
                     Backup Data
                 </a>
-            </li>
+            </li> -->
         </ul>
 
         <ul class="navbar-nav">

@@ -143,6 +143,29 @@ class Homepage extends CI_Controller {
 		$this->load->view('Footer');
 	}
 
+	public function UpdateDataPeserta()
+	{
+		$id_data_pribadi = $this->input->post('update_peserta_button');
+		$nik = $this->input->post('nik_input');
+		$nama = $this->input->post('nama_input');
+		$nohp = $this->input->post('nohp_input');
+		$tmptlahir = $this->input->post('tmptlahir_input');
+		$tgllahir = $this->input->post('tgllahir_input');
+		$tgllahir = date('Y-m-d',strtotime($tgllahir));
+		$email = $this->input->post('email_input');
+		$organisasi = $this->input->post('organisasi_input');
+		$skema = $this->input->post('pilih_skema');
+		$tmptujikom = $this->input->post('pilih_tempat_ujian');
+		$rekomendasi = $this->input->post('rekomendasi_input');
+		$tglsertifikasi = $this->input->post('tglsertifikasi_input');
+		$tglsertifikasi = date('Y-m-d',strtotime($tglsertifikasi));
+
+
+		$this->DataPesertaModel->updateDataPeserta($id_data_pribadi, $nik, $nama, $nohp, $tmptlahir, $tgllahir, $email, $organisasi, $skema, $tmptujikom, $rekomendasi, $tglsertifikasi);
+
+		$this->TampilDataPeserta();	
+	}
+
 }
 
 /* End of file Homepage.php */

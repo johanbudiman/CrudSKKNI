@@ -14,7 +14,7 @@
 				</div>
 
 				<div class="card-body" id="collapse-edit-admin">
-					<form id="input_data_peserta" action="<?php echo site_url('Homepage/InsertInputDataPeserta') ?>" method="post" accept-charset="utf-8" >
+					<form id="update_data_peserta" action="<?php echo site_url('Homepage/UpdateDataPeserta') ?>" method="post" accept-charset="utf-8" >
 
 						<div class="form-group">
 							<div class="row">
@@ -132,7 +132,7 @@
 						</div>
 
 
-						<button type="submit" class="btn btn-success text-center float-right" name="simpan_peserta_button" value="baru" id="simpan-peserta-button">
+						<button type="submit" class="btn btn-success text-center float-right" name="update_peserta_button" value="<?php echo $id_data_pribadi ?>" id="update_peserta_button">
 							Simpan
 						</button>
 

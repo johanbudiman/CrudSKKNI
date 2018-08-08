@@ -136,7 +136,36 @@ class DataPesertaModel extends CI_Model {
 	}
 
 
-	public function DataPeserta($id_data_pribadi)
+	public function updateDataPeserta($id_data_pribadi, $nik, $nama, $nohp, $tmptlahir, $tgllahir, $email, $organisasi, $skema, $tmptujikom, $rekomendasi, $tglsertifikasi)
+	{
+
+		 $data_pribadi = array(
+			'nik' => $nik, 
+			'nama' => $nama,
+			'nohp' => $nohp,
+			'tmptlahir' => $tmptlahir,
+			'tgllahir' => $tgllahir, 
+			'email' => $email
+		);
+
+		$this->db->where('id', $id_data_pribadi);
+		$this->db->update('t_data_pribadi', $data_pribadi);
+
+		$data_sertifikasi = array(
+			'skema' => $skema, 
+			'tmptujikom' => $tmptujikom,
+			'rekomendasi' => $rekomendasi,
+			'ttsertifikasi' => $tglsertifikasi,
+			'organisasi' => $organisasi, 
+		);
+
+		$this->db->where('id_data_pribadi', $id_data_pribadi);
+		return $this->db->update('t_sertifikasi', $data_sertifikasi);
+		
+	}
+
+
+	public function DeleteDataPeserta($id_data_pribadi)
 	{
 		$this->db->where('id', $id_data_pribadi);
 		return $this->db->delete('t_data_pribadi');

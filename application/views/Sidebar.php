@@ -48,7 +48,7 @@
 		                </div>
 		            </a>
 		        </li>
-
+<!-- 
 		        <li class="nav-item">
 		            <a href="<?php echo site_url('Homepage/BackupData') ?>" class="bg-dark list-group-item list-group-item-action nav-link">
 		                <div class="d-flex w-100 justify-content-start align-items-center">
@@ -58,7 +58,7 @@
 		                    </span>
 		                </div>
 		            </a>
-		        </li>
+		        </li> -->
 
 	            <li class="list-group-item logo-separator d-flex justify-content-center">
 	                <a class="nav-link font-weight-bold" href="<?php echo site_url('Homepage/Logout') ?>">
