@@ -5,7 +5,7 @@
 		
 		<h2 class="text-center font-weight-bold text-uppercase">Laporan Sertifikasi SKKNI</h2>
 
-		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Skema</h4>
+		<h4 class="font-weight-bold text-uppercase pt-3">Berdasarkan Skema</h4>
 
 		<table class="table table-sm table-striped table-hover table-bordered">
 			<thead>
@@ -26,7 +26,7 @@
 
 
 
-		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Tempat Ujian</h4>
+		<h4 class="font-weight-bold text-uppercase pt-3">Berdasarkan Tempat Ujian</h4>
 
 		<table class="table table-sm table-striped table-hover table-bordered">
 			<thead>
@@ -47,7 +47,7 @@
 
 
 
-		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Organisasi</h4>
+		<h4 class="font-weight-bold text-uppercase pt-3">Berdasarkan Organisasi</h4>
 
 		<table class="table table-sm table-striped table-hover table-bordered">
 			<thead>
@@ -67,7 +67,7 @@
 		</table>
 
 
-		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Tanggal Sertifikasi</h4>
+		<h4 class="font-weight-bold text-uppercase pt-3">Berdasarkan Tanggal Sertifikasi</h4>
 
 		<table class="table table-sm table-striped table-hover table-bordered">
 			<thead>
@@ -87,7 +87,7 @@
 		</table>
 
 
-		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Tanggal Lahir</h4>
+		<h4 class="font-weight-bold text-uppercase pt-3">Berdasarkan Tanggal Lahir</h4>
 
 		<table class="table table-sm table-striped table-hover table-bordered">
 			<thead>
@@ -109,7 +109,7 @@
 
 
 
-		<h4 class="text-center font-weight-bold text-uppercase pt-3">Berdasarkan Data Keseluruhan</h4>
+		<h4 class="font-weight-bold text-uppercase pt-3">Berdasarkan Data Keseluruhan</h4>
 		<table class="table table-sm table-striped table-hover table-bordered table-responsive">
 			<thead>
 				<tr class="thead-default table-success">
